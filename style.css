@@ -1,0 +1,158 @@
+:root {
+    --shadow-op5: 0px 0px 5px #00000090;
+    --shadow-op10: 0px 0px 10px #00000090;
+    --shadow-op20: 0px 0px 20px #00000090;
+    --shadow-w-op5: 0px 0px 10px #ffffff90,0px 0px 1px #000000aa;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg,#afb3b7,#afb3b7,#69818d,#5a636a,#132e35,#0d1f23) no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    padding: 0px 120px;
+}
+
+header nav .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 600px;
+}
+
+header nav .nav-desc {
+    text-shadow: var(--shadow-op10);
+}
+
+nav div a .img {
+    padding: 10px 0px 15px;
+    width: 120px;
+    height: 75px;
+    filter: drop-shadow(4px 4px 10px rgb(0, 0, 0));
+}
+
+.w-title {
+    font-weight: bold;
+    letter-spacing: .4px;
+    font-size: 24px;
+    margin: 10px 0;
+    text-shadow: var(--shadow-w-op5);
+    font-family: "Gowun Dodum", sans-serif;
+    color: #132e35;
+}
+
+.w-select {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+form label{
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Gowun Dodum", sans-serif;
+    margin-right: 10px;
+    text-shadow: var(--shadow-w-op5);
+    color: #132e35;
+}
+
+.timer{
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    text-shadow: var(--shadow-op5);
+    text-align: center;
+    border: solid 2px rgba(0,0,0,0.3);
+    width: 450px;
+    box-shadow: 0 8px 32px 0  rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+form select {
+    cursor: pointer;
+    font-size: 17px;
+    width: 220px;
+    padding: 5px 0px;
+    outline: none;
+    border: #132e35 3px solid;
+    background: #5a636a;
+    border-radius: 5px;
+    color: #132e35;
+    font-weight: bold;}
+
+form button {
+    font-size: 17px;
+    margin-bottom:12px;
+    padding: 7px 30px;
+    cursor: pointer;
+    color: #272a2d;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: #132e35 3px solid;
+    background-color: #00000000;
+}
+
+hr{
+    border: 1.5px solid #69818d;
+}
+
+form{
+display: flex;
+justify-content: space-between;
+}
+
+
+.time_ma{
+    margin-bottom: 20px;
+}
+#date{
+    padding-top: 18px;
+    font-family: "Alumni Sans Pinstripe", sans-serif !important;
+}
+#tdate{
+    font-family: "Alumni Sans Pinstripe", sans-serif !important;
+}
+
+#res h1{
+    font-family: "Alumni Sans Pinstripe", sans-serif !important;
+    font-size: 46px;
+}
+
+#res{
+    display: flex;
+    justify-content: space-around;
+}
+
+.weath-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.weath-img img {
+    width: 64px;
+}
+.weath {
+    font-size: 30px;
+    font-family: "Alumni Sans Pinstripe", sans-serif !important;
+}
+
+.info{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    margin-left: 10px;
+    font-family: "Gowun Dodum", sans-serif;
+    text-shadow: var(--shadow-op10);
+    color: #132e35;
+}
